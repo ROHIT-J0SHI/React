@@ -29,7 +29,7 @@ function App() {
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-            backgroundImage: `url('https://images.pexels.com/photos/730647/pexels-photo-730647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
+            backgroundImage: `url('https://images.pexels.com/photos/7788009/pexels-photo-7788009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
         }}
     >
         <div className="w-full">
@@ -49,13 +49,13 @@ function App() {
                             onCurrencyChange={(currency) => setFrom(currency)}
                             selectCurrency={from}
                             onAmountChange={(amount) => setAmount(amount)}
-                            className='text-base'
+                            className='text-lg'
                         />
                     </div>
                     <div className="relative w-full h-0.5">
                         <button
                             type="button"
-                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-orange-600 text-white px-2 py-0.5 hover:bg-orange-500"
+                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5 hover:bg-blue-500"
                             onClick={swap}
                         >
                             swap
@@ -68,11 +68,11 @@ function App() {
                             currencyOptions={options}
                             onCurrencyChange={(currency) => setTo(currency)}
                             selectCurrency={to}
-                            className='text-base'
+                            className='text-lg'
                             amountDisable
                         />
                     </div>
-                    <button type="submit" className="w-full bg-orange-600 text-white px-4 py-3 rounded-lg hover:bg-orange-500">
+                    <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-500">
                         Convert {from.toUpperCase()} to {to.toUpperCase()}
                     </button>
                 </form>
